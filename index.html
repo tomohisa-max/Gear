@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>持ち物リスト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #item-list li {
+            margin-bottom: 5px;
+        }
+        .delete-btn {
+            margin-left: 10px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>持ち物リスト</h1>
+    <input type="text" id="item-input" placeholder="持ち物を入力" />
+    <button id="add-btn">追加</button>
+    <ul id="item-list"></ul>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfing Gear Checklist</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('umi.jpg'); /* 背景画像を指定 */
+            background-size: cover; /* 画像を全画面に拡大 */
+            background-position: center; /* 画像を中央揃え */
+            background-attachment: fixed; /* スクロール時に固定 */
+            color: #333;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #000; /* タイトルを白に */
+        }
+
+        #item-input, #add-btn {
+            width: calc(100% - 40px); /* 幅を画面サイズに合わせる */
+            max-width: 400px; /* 最大幅を制限 */
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            font-size: 16px;
+        }
+
+        #item-list {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #item-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .delete-btn {
+            margin-left: 10px;
+            color: red;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Surfing Gear Checklist</h1>
+    <input type="text" id="item-input" placeholder="持ち物を入力" />
+    <button id="add-btn">追加</button>
+    <ul id="item-list"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
